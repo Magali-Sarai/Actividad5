@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="css/login.css">
-    <script src="js/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-<section class="vh-100">
-  <div class="container py-5 h-100">
-    <div class="row d-flex align-items-center justify-content-center h-100">
-      <div class="col-md-8 col-lg-7 col-xl-6">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-          class="img-fluid" alt="Phone image">
-      </div>
-      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-        <form>
-          <!-- Email input -->
-          <div data-mdb-input-init class="form-outline mb-4">
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example13">Email address</label>
+
+  <div class="container">
+    <div class="container-form">
+        <form class="sign-in">
+          <h2>Iniciar sesión</h2>
+          <div class="social-networks">
+              <ion-icon name="logo-twitch"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-google"></ion-icon>
           </div>
-
-          <!-- Password input -->
-          <div data-mdb-input-init class="form-outline mb-4">
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example23">Password</label>
+          <span>Use su correo y contraseña</span>
+          <div class="container-input">
+            <ion-icon name="mail"></ion-icon>
+            <input type="text" placeholder="Email">
           </div>
-
-          <div class="d-flex justify-content-around align-items-center mb-4">
-            <!-- Checkbox -->
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-              <label class="form-check-label" for="form1Example3"> Remember me </label>
-            </div>
-            <a href="#!">Forgot password?</a>
+          <div class="container-input">
+            <ion-icon name="lock"></ion-icon>
+            <input type="password" placeholder="password">
           </div>
-
-          <!-- Submit button -->
-          <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Sign in</button>
-
-          <div class="divider d-flex align-items-center my-4">
-            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
-          </div>
-
-          <a data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
-            role="button">
-            <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
-          </a>
-          <a data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
-            role="button">
-            <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
-
+          <a href="#">Olvidaste tu contraseña?</a>
+          <button class="button">INICIAR SESIÓN</button>
         </form>
-      </div>
+    </div>
+    <div class="container-form">
+        <form class="sign-up">
+          <h2>Registrarse</h2>
+          <div class="social-networks">
+              <ion-icon name="logo-twitch"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-google"></ion-icon>
+          </div>
+          <span>Use su correo electronico para registrarse</span>
+          <div class="container-input">
+            <ion-icon name="person"></ion-icon>
+            <input type="text" placeholder="Nombre">
+          </div>
+          <div class="container-input">
+            <ion-icon name="mail"></ion-icon>
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="container-input">
+            <ion-icon name="lock"></ion-icon>
+            <input type="password" placeholder="password">
+          </div>
+          <button class="button">REGISTRARSE</button>
+        </form>
     </div>
   </div>
-</section>
+
+  <button id="btn">Click</button>
+<script src="/js/login.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
