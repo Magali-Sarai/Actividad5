@@ -6,32 +6,34 @@
     font-family: "Montserrat", sans-serif;
 }
 body{
-    border: 2px solid red;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #D8DCEE;
 }
 .container{
-    border: 2px solid black;
     width: 800px;
     height: 500px;
     display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3)
 }
 .container-form{
-    border: 2px solid green;
     width: 100%;
     overflow: hidden;
 }
 .container-form form{
-    border: 2px solid red;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease-in;
 }
 .container-form h2{
     font-size: 30px;
@@ -84,7 +86,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    background-color: #3AB397;
+    background-color: #4D3369;
     color: white;
 }
 /*Animación*/
@@ -97,4 +99,53 @@ body{
 }
 .container.toggle .sign-up{
     transform: translateX(0);
+}
+/*Welcome*/
+.container-welcome{
+    background-color: #4D3369;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    border-radius: 50% 0 0 50%;
+}
+.container.toggle .container-welcome{
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #7A5C9E;
+}
+
+.container-welcome .welcome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px ;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.welcome-sign-in{
+    transform: translateX(100%);
+}
+.container-welcome h3{
+    font-size: 40px;
+}
+.container-welcome p{
+    font-size: 14px;
+    text-align: center;
+}
+.container-welcome .button{
+    border: 2px solid white;
+    background-color: transparent;
+}
+.container.toggle .welcome-sign-in{
+    transform: translateX(0);
+}
+.container.toggle .welcome-sign-up{
+    transform: translateX(-100%);
 }
