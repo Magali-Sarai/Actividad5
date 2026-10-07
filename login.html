@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="/css/login.css">
 </head>
+
 <body>
 
   <div class="container">
     <div class="container-form">
-        <form class="sign-in" id="formSignIn">
-          <h2>Iniciar sesión</h2>
-          <div class="social-networks">
-              <ion-icon name="logo-twitch"></ion-icon>
-              <ion-icon name="logo-twitter"></ion-icon>
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-icon name="logo-google"></ion-icon>
-          </div>
-          <span>Use su correo y contraseña</span>
-          <div class="container-input">
-            <ion-icon name="mail"></ion-icon>
-            <input type="text" id="loginEmail" placeholder="Email">
-          </div>
-          <div class="container-input">
-            <ion-icon name="lock"></ion-icon>
-            <input type="password" id="loginPassword" placeholder="password">
-          </div>
-          <a href="#" id="forgotPassword">Olvidaste tu contraseña?</a>
-          <button class="button">INICIAR SESIÓN</button>
-        </form>
+      <form class="sign-in" id="formSignIn">
+        <h2>Iniciar sesión</h2>
+        <span>Use su correo y contraseña</span>
+        <div class="container-input">
+          <ion-icon name="mail"></ion-icon>
+          <input type="text" id="loginEmail" placeholder="Email">
+        </div>
+        <div class="container-input">
+          <ion-icon name="lock"></ion-icon>
+          <input type="password" id="loginPassword" placeholder="password">
+        </div>
+        <a href="#" id="forgotPassword">Olvidaste tu contraseña?</a>
+        <button class="button">INICIAR SESIÓN</button>
+      </form>
     </div>
     <div class="container-form">
-        <form class="sign-up" id="formSignUp">
-          <h2>Registrarse</h2>
-          <div class="social-networks">
-              <ion-icon name="logo-twitch"></ion-icon>
-              <ion-icon name="logo-twitter"></ion-icon>
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-icon name="logo-google"></ion-icon>
-          </div>
-          <span>Use su correo electronico para registrarse</span>
-          <div class="container-input">
-            <ion-icon name="person"></ion-icon>
-            <input type="text" id="regNombre" placeholder="Nombre">
-          </div>
-          <div class="container-input">
-            <ion-icon name="mail"></ion-icon>
-            <input type="text" id="regEmail" placeholder="Email">
-          </div>
-          <div class="container-input">
-            <ion-icon name="lock"></ion-icon>
-            <input type="password" id="regPassword" placeholder="password">
-          </div>
-          <button class="button">REGISTRARSE</button>
-        </form>
+      <form class="sign-up" id="formSignUp">
+        <h2>Registrarse</h2>
+        <span>Use su correo electronico para registrarse</span>
+        <div class="container-input">
+          <ion-icon name="person"></ion-icon>
+          <input type="text" id="regNombre" placeholder="Nombre">
+        </div>
+        <div class="container-input">
+          <ion-icon name="mail"></ion-icon>
+          <input type="text" id="regEmail" placeholder="Email">
+        </div>
+        <div class="container-input">
+          <ion-icon name="lock"></ion-icon>
+          <input type="password" id="regPassword" placeholder="password">
+        </div>
+        <button class="button">REGISTRARSE</button>
+      </form>
     </div>
     <div class="container-welcome">
       <div class="welcome-sign-up welcome">
@@ -70,8 +60,10 @@
     </div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/gh/AlejandroVicto/utileria.js@main/js/utileria.js"></script>
-<script src="/js/login.js"></script>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AlejandroVicto/utileria.js@main/js/utileria.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/login.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
+
 </html>

@@ -23,12 +23,12 @@ if (formSignIn) {
 
 
         if (!validarCorreo(email)) {
-            alert("El correo electrónico no tiene un formato válido.");
+            Swal.fire('Error', 'El correo electrónico no tiene un formato válido.', 'error');
             esValido = false;
         }
 
         if (esValido && !validarPassword(password)) {
-            alert("La contraseña no es válida.");
+            Swal.fire('Error', 'La contraseña no es válida.', 'error');
             esValido = false;
         }
 
@@ -61,24 +61,25 @@ if (formSignUp) {
         let esValido = true;
 
         if (!soloLetras(nombre)) {
-            alert("El nombre solo debe contener letras.");
+            Swal.fire('Error', 'El nombre solo debe contener letras.', 'error');
             esValido = false;
         }
 
         if (esValido && !validarCorreo(email)) {
-            alert("El correo electrónico no tiene un formato válido.");
+            Swal.fire('Error', 'El correo electrónico no tiene un formato válido.', 'error');
             esValido = false;
         }
 
         if (esValido && !validarPassword(password)) {
-            alert("La contraseña no es válida.");
+            Swal.fire('Error', 'La contraseña no es válida.', 'error');
             esValido = false;
         }
 
         if (esValido) {
-            alert("Registro exitoso. Ahora puedes iniciar sesión.");
-            document.getElementById("formSignUp").reset();
-            container.classList.remove("toggle");
+            Swal.fire('¡Registro exitoso!', 'Ahora puedes iniciar sesión.', 'success').then(() => {
+                document.getElementById("formSignUp").reset();
+                container.classList.remove("toggle");
+            });
         }
     });
 }
