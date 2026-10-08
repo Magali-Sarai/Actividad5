@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
-    background-color: #f5f5f9; /* Color de fondo típico de admin templates */
+    background-color: #D8DCEE; /* Color de fondo típico de admin templates */
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .brand-logo h4 {
-    color: #696cff !important;
+    color: #4D3369 !important;
     font-size: 1.5rem;
     letter-spacing: -0.5px;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 #sidebar .nav-link {
-    color: #697a8d;
+    color: #697a8d; /**/
     padding: 0.625rem 1rem;
     border-radius: 0.375rem;
     margin: 0.2rem 0;
@@ -48,7 +48,7 @@ body {
 
 #sidebar .nav-link:hover, #sidebar .nav-link:focus {
     background-color: rgba(105, 108, 255, 0.08);
-    color: #696cff;
+    color: #4D3369;
 }
 
 /* Iconos del sidebar */
@@ -86,36 +86,36 @@ body {
 }
 
 .navbar .btn-light:hover {
-    color: #696cff;
+    color: #4D3369;
 }
 
 /* Botones Personalizados tipo Sneat */
 .btn-primary {
-    background-color: #696cff;
-    border-color: #696cff;
+    background-color: #4D3369;
+    border-color: #4D3369;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
 }
 
 .btn-primary:hover {
-    background-color: #5f61e6;
-    border-color: #5f61e6;
+    background-color: #4D3369;
+    border-color: #4D3369;
     transform: translateY(-1px);
 }
 
 .btn-success {
-    background-color: #71dd37;
-    border-color: #71dd37;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(113, 221, 55, 0.4);
+    background-color: #7A5C9E;
+    border-color: #7A5C9E;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(150, 79, 225, 0.4);
 }
 
 .btn-success:hover {
-    background-color: #66c732;
-    border-color: #66c732;
+    background-color: #7A5C9E;
+    border-color: #7A5C9E;
     transform: translateY(-1px);
 }
 
 .text-primary {
-    color: #696cff !important;
+    color: #4D3369 !important;
 }
 
 /* Inputs de formulario */
@@ -126,7 +126,7 @@ body {
 }
 
 .form-control:focus {
-    border-color: #696cff;
+    border-color: #4D3369;
     box-shadow: 0 0 0.25rem 0.05rem rgba(105, 108, 255, 0.1);
 }
 
@@ -149,7 +149,7 @@ body {
 /* Dropdown styling */
 .dropdown-item.active, .dropdown-item:active {
     background-color: rgba(105, 108, 255, 0.08);
-    color: #696cff;
+    color: #4D3369;
 }
 
 /* Responsive */
